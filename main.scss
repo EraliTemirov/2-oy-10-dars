@@ -14,17 +14,21 @@ a {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  @media screen and (max-width: 1200px) {
+    width: 600px;
+    max-width: 550px;
+  }
   @media screen and (max-width: 600px) {
     width: 100%;
-   max-width: 550px;
+    max-width: 550px;
   }
 }
 ul {
   list-style: none;
 }
-li{
-      @media screen and (max-width: 600px) {
-   display: none;
+li {
+  @media screen and (max-width: 600px) {
+    display: none;
   }
 }
 .parent {
@@ -68,9 +72,9 @@ li{
   margin-bottom: 5px;
   justify-content: center;
 }
-.all{
- @media screen and (max-width: 600px) {
-  flex-direction: column;
+.all {
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
   }
 }
 .new {
@@ -80,46 +84,48 @@ li{
   width: 1200px;
   margin: 0 auto;
   color: white;
-   @media screen and (max-width: 600px) {
+  @media screen and (max-width: 600px) {
     width: 570px;
     margin: 0 auto;
   }
-   
+
   h1 {
     width: 450px;
     font-size: 40px;
     margin-bottom: 80px;
-  @media screen and (max-width: 600px) {
-  font-size: 30px;
-  margin-left: 20px;
-  }
+    @media screen and (max-width: 600px) {
+      font-size: 30px;
+      margin-left: 20px;
+    }
   }
   .p1 {
     margin-right: 40px;
     width: 550px;
     margin-bottom: 50px;
     line-height: 1.8rem;
-   @media screen and (max-width: 600px) {
-     margin-right: 4px;
-    width: 550px;
-    margin-bottom: 20px;
-    line-height: 1.4rem;
-    margin-left: 15px;
-  }
+    @media screen and (max-width: 600px) {
+      margin-right: 4px;
+      width: 550px;
+      margin-bottom: 20px;
+      line-height: 1.4rem;
+      margin-left: 15px;
+    }
   }
   .p2 {
     width: 600px;
-       @media screen and (max-width: 600px) {
-    width: 550px;
-  }
+    @media screen and (max-width: 600px) {
+      width: 550px;
+    }
   }
   .hero-img {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
+
     transform: translateX(100px);
-   @media screen and (max-width: 600px) {
-   display: block;
-    transform: translateX(-10px);
-  }
+    @media screen and (max-width: 600px) {
+      display: block;
+      transform: translateX(-10px);
+    }
   }
 }
 .bac {
@@ -129,14 +135,13 @@ li{
 .main-2 {
   background-color: black;
   @media screen and (max-width: 600px) {
- flex-direction: column;
+    flex-direction: column;
   }
   .sport {
     width: 600px;
     @media screen and (max-width: 600px) {
-    width: 570px;
-    
-  }
+      width: 570px;
+    }
   }
   .text-main {
     color: white;
@@ -144,9 +149,9 @@ li{
     width: 450px;
     line-height: 2.2rem;
     @media screen and (max-width: 600px) {
-    width: 400px;
-    margin: 0 auto;
-  }
+      width: 400px;
+      margin: 0 auto;
+    }
     h2 {
       font-size: 18px;
     }
@@ -157,23 +162,23 @@ li{
 }
 .main-3 {
   @media screen and (max-width: 600px) {
-   flex-direction: column;
+    flex-direction: column;
   }
   padding-top: 120px;
   color: white;
   h2 {
     width: 500px;
     font-size: 55px;
-      @media screen and (max-width: 600px) {
-  font-size: 35px;
-  padding-bottom: 10px;
-  }
+    @media screen and (max-width: 600px) {
+      font-size: 35px;
+      padding-bottom: 10px;
+    }
   }
   .sports {
     width: 600px;
     @media screen and (max-width: 600px) {
-    width: 570px;
-  }
+      width: 570px;
+    }
   }
 }
 
@@ -186,14 +191,14 @@ li{
   grid-template-areas:
     "a2 a2 a2 a2"
     "a3 a4 a5 a6";
-    @media screen and (max-width: 600px) {
-      grid-template-columns: repeat(4, 1fr);
-     grid-template-areas:
-    "a2 a2 a2 a2"
-    "a3 a a a"
-    "a4 a a a"
-    "a5 a a a"
-    "a6 a a a";
+  @media screen and (max-width: 600px) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "a2 a2 a2 a2"
+      "a3 a a a"
+      "a4 a a a"
+      "a5 a a a"
+      "a6 a a a";
   }
   h2 {
     margin-top: 80px;
@@ -234,10 +239,9 @@ li{
   }
 }
 footer {
-  
   padding-top: 20px;
   background-color: #f1f1f1;
-  
+
   a {
     color: #7e7e7e;
     margin-top: 20px;
@@ -249,13 +253,13 @@ footer {
 .rasmlar {
   gap: 25px;
 }
-.alll{
-    @media screen and (max-width: 600px) {
-   flex-direction: column;
+.alll {
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
   }
 }
-.an{
-    @media screen and (max-width: 600px) {
+.an {
+  @media screen and (max-width: 600px) {
     margin-top: 20px;
     margin-left: -350px;
   }
