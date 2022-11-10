@@ -1,12 +1,12 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
+body {
   font-family: sans-serif;
 }
-a{
+a {
   text-decoration: none;
   display: block;
 }
@@ -14,14 +14,20 @@ a{
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-   @media screen and (max-width: 400px) {
-    width: 375px;
+  @media screen and (max-width: 600px) {
+    width: 100%;
+   max-width: 550px;
   }
 }
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
-.parent{
+li{
+      @media screen and (max-width: 600px) {
+   display: none;
+  }
+}
+.parent {
   padding: 10px;
 }
 .flex {
@@ -48,144 +54,147 @@ ul{
 .align-center {
   align-items: center;
 }
-.nav{
-    display: flex;
-    gap: 15px ;
+.nav {
+  display: flex;
+  gap: 15px;
 }
-.child{
-    margin-right: 15px;
+.child {
+  margin-right: 15px;
 }
-.header-1{
-    display: flex;
-    margin: 0 auto;
-    padding-bottom: 5px;
-    margin-bottom: 5px;
-    justify-content: center;
+.header-1 {
+  display: flex;
+  margin: 0 auto;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  justify-content: center;
 }
-.new{
+.new {
   background-color: black;
-  .hero{
-    background-color: black;
-    color: white;
-    width: 1250px;
+}
+.hero {
+  width: 1200px;
+  margin: 0 auto;
+  color: white;
+   @media screen and (max-width: 600px) {
+    width: 570px;
     margin: 0 auto;
-   .container{
-    margin-left: 150px;
-     h1{
-        width: 450px;
-        font-size: 40px;
-        margin-bottom: 80px;
-        
-        
-    }
-    .p1{
-       margin-right: 40px;
-        width: 550px;
-        margin-bottom: 50px;
-        line-height: 1.8rem;
-    }
-    .p2{
-        width: 600px;
-    }
-    .hero-img{
-        width: 600px;
-        transform: translateX(170px);
-    }
-   }
+  }
+   
+  h1 {
+    width: 450px;
+    font-size: 40px;
+    margin-bottom: 80px;
+  }
+  .p1 {
+    margin-right: 40px;
+    width: 550px;
+    margin-bottom: 50px;
+    line-height: 1.8rem;
+  }
+  .p2 {
+    width: 600px;
+  }
+  .hero-img {
+    width: 600px;
+    transform: translateX(100px);
+   @media screen and (max-width: 600px) {
+   display: block;
+    transform: translateX(0);
+  }
+  }
 }
-}
-.bac{
+.bac {
   padding-top: 40px;
   background-color: black;
 }
-.main-2{
-  background-color: black; .sport{
-      width: 600px;
-    }
-    .text-main{
-      color: white;
-      margin-left: 150px;
-      width: 450px;
-      line-height: 2.2rem;
-     h2{
+.main-2 {
+  background-color: black;
+  .sport {
+    width: 600px;
+  }
+  .text-main {
+    color: white;
+    margin-left: 150px;
+    width: 450px;
+    line-height: 2.2rem;
+    h2 {
       font-size: 18px;
-     }
-     p{
-      font-size: 18px;
-     }
     }
+    p {
+      font-size: 18px;
+    }
+  }
 }
-.main-3{
+.main-3 {
   padding-top: 120px;
-  color:white;
-  h2{
+  color: white;
+  h2 {
     width: 500px;
     font-size: 55px;
-    
   }
-  .sports{
+  .sports {
     width: 600px;
   }
 }
 
 .parents {
   display: grid;
-  .img{
+  .img {
     width: 290px;
   }
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas:
     "a2 a2 a2 a2"
     "a3 a4 a5 a6";
-    h2{
-      margin-top: 80px;
-      margin-bottom: 40px;
-      grid-area: a2;
-    }
-    .card-1{
-      width: 250px;
-     grid-area: a3;
-     p{
+  h2 {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    grid-area: a2;
+  }
+  .card-1 {
+    width: 250px;
+    grid-area: a3;
+    p {
       margin-bottom: 5px;
       margin-top: 5px;
-     }
     }
-    .card-2{
-      width: 250px;
-     grid-area: a4;
-        p{
+  }
+  .card-2 {
+    width: 250px;
+    grid-area: a4;
+    p {
       margin-bottom: 5px;
       margin-top: 5px;
-     }
     }
-    .card-3{
-      width: 250px;
-     grid-area: a5;
-        p{
+  }
+  .card-3 {
+    width: 250px;
+    grid-area: a5;
+    p {
       margin-bottom: 5px;
       margin-top: 5px;
-     }
     }
-    .card-4{
-      width: 250px;
-     grid-area: a6;
-        p{
+  }
+  .card-4 {
+    width: 250px;
+    grid-area: a6;
+    p {
       margin-bottom: 5px;
       margin-top: 5px;
-     }
     }
   }
-  footer{
-    padding-top: 20px;
-    background-color: #F1F1F1;
-    a{
-      color:#7E7E7E;
-       margin-top: 20px;
-    }
+}
+footer {
+  padding-top: 20px;
+  background-color: #f1f1f1;
+  a {
+    color: #7e7e7e;
+    margin-top: 20px;
   }
-  .row{
-    width: 450px;
-  }
-  .rasmlar{
-    gap: 25px;
-  }
+}
+.row {
+  width: 450px;
+}
+.rasmlar {
+  gap: 25px;
+}

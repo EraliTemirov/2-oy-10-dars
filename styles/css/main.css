@@ -18,14 +18,21 @@ a {
   max-width: 1200px;
   margin: 0 auto;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .container {
-    width: 375px;
+    width: 100%;
+    max-width: 550px;
   }
 }
 
 ul {
   list-style: none;
+}
+
+@media screen and (max-width: 600px) {
+  li {
+    display: none;
+  }
 }
 
 .parent {
@@ -77,32 +84,41 @@ ul {
 .new {
   background-color: black;
 }
-.new .hero {
-  background-color: black;
-  color: white;
-  width: 1250px;
+
+.hero {
+  width: 1200px;
   margin: 0 auto;
+  color: white;
 }
-.new .hero .container {
-  margin-left: 150px;
+@media screen and (max-width: 600px) {
+  .hero {
+    width: 570px;
+    margin: 0 auto;
+  }
 }
-.new .hero .container h1 {
+.hero h1 {
   width: 450px;
   font-size: 40px;
   margin-bottom: 80px;
 }
-.new .hero .container .p1 {
+.hero .p1 {
   margin-right: 40px;
   width: 550px;
   margin-bottom: 50px;
   line-height: 1.8rem;
 }
-.new .hero .container .p2 {
+.hero .p2 {
   width: 600px;
 }
-.new .hero .container .hero-img {
+.hero .hero-img {
   width: 600px;
-  transform: translateX(170px);
+  transform: translateX(100px);
+}
+@media screen and (max-width: 600px) {
+  .hero .hero-img {
+    display: block;
+    transform: translateX(0);
+  }
 }
 
 .bac {
@@ -189,10 +205,10 @@ ul {
 
 footer {
   padding-top: 20px;
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
 }
 footer a {
-  color: #7E7E7E;
+  color: #7e7e7e;
   margin-top: 20px;
 }
 
